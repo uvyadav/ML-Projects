@@ -1,6 +1,3 @@
-""" Straight forward Keras Approach"""
-# https://www.kaggle.com/mihaskalic/keras-straightforward/notebook
-
 import numpy as np 
 import pandas as pd 
 
