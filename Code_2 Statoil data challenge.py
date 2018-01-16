@@ -23,12 +23,12 @@ model = Sequential()
 model.add(Convolution2D(32, 3, activation="relu", input_shape=(75, 75, 2)))
 model.add(Convolution2D(64, 3, activation="relu", input_shape=(75, 75, 2)))
 model.add(GlobalAveragePooling2D())
-model.add(Dropout(0.4))
+model.add(Dropout(0.3))
 model.add(Dense(1, activation="sigmoid"))
 model.compile("adam", "binary_crossentropy", metrics=["accuracy"])
 model.summary()
 
-model.fit(X_train, y_train, validation_split=.2, batch_size = 1)
+model.fit(X_train, y_train, validation_split=.25, batch_size = 1)
 
 # Where have you defined the no. of epochs
 
